@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js"></script>
+
+  </head>
+  <body ng-app="WeatherApp">
+
+    <div class="weather container-fluid {{bgclass}}" ng-controller="MainController">
+		
+		<header class="header">
+			<h1>Local weather for {{weatherdata.name}}!</h1>
+		</header>
+		<section class="weatherdata">
+			<h1>Temp:</h1> <h3>{{temp}} &deg; <img ng-src="{{weathericonurl}}"></h3>
+			<h1>Condition:</h1> <h3>{{weatherdata.weather[0].description}}</h3>
+			
+			<button class="btn btn-warning" ng-click="temp = tempc">C &deg;</button>
+			<button class="btn btn-warning" ng-click="temp = tempf">F &deg;</button>		
+		</section>
+			
+	</div>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>    
+
+    <!-- Controllers -->
+    <script src= 'js/controllers/MainController.js'></script>
+
+    <!-- Directives -->
+    
+
+    <!-- Services -->
+    <script src= 'js/services/weather.js'></script>
+    
+  </body>
+</html>
