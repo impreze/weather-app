@@ -1,0 +1,98 @@
+body {
+  background: #fafce9 url('http://sylvesterezeani.com/img/wa/wood_pattern.png');
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.weather-module {
+  background: url('http://sylvesterezeani.com/img/wa/standardbg.png') ;
+  margin-top: 80px;
+  min-height: 250px;
+  background-color: #025159;
+  border-radius: 10px;
+  box-shadow: 10px 10px 25px #3b5b5e;
+}
+
+header {
+  margin: 0;
+  padding: 20px 5px;
+  text-align: center;
+  border-bottom: 2px solid #2e2e2e;
+}
+
+header h3 {
+  font-weight:bold;
+}
+
+.weather-data {
+  margin: 20px auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  p {
+    font-size: 20px;
+  }
+}
+
+
+/* Code for Alternative Backgrounds */
+
+.thunderbg {
+  background: url('http://sylvesterezeani.com/img/wa/thunderbg.png');
+  background-size: cover;
+}
+
+.drizzlebg {
+  background: url('http://sylvesterezeani.com/img/wa/drizzlebg.png');
+  background-size: cover;
+}
+
+.rainbg {
+  background: url('http://sylvesterezeani.com/img/wa/rainbg.png');
+  background-size: cover;
+}
+
+.snowbg {
+  background: url('http://sylvesterezeani.com/img/wa/snowbg.png');
+  background-size: cover;
+}
+
+.atmospherebg {
+  background: url('http://sylvesterezeani.com/img/wa/atmospherebg.png');
+  background-size: cover;
+  color: #2e2e2e;
+}
+
+.clearbg {background: url('http://sylvesterezeani.com/img/wa/clearbg.png');
+background-size: cover;
+}
+
+.cloudbg {
+  background: url('http://sylvesterezeani.com/img/wa/cloudbg.png');
+  background-size: cover;
+  color: #2e2e2e;
+}
+
+.extremebg {
+  background: url('http://sylvesterezeani.com/img/wa/extremebg.png');
+  background-size: cover;
+  color: #2e2e2e;
+}
+
+.stndbg {
+  background: url('http://sylvesterezeani.com/img/wa/standardbg.png') ;
+  background-size: cover;
+  color: #2e2e2e;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
